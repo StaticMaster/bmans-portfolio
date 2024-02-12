@@ -8,6 +8,11 @@
     padding-top: 20px; 
 }
 
+.logo{
+    width: 200px;
+}
+
+
 .nav {
     list-style-type: none;
     padding: 0;

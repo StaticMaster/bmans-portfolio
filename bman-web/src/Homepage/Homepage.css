@@ -2,12 +2,19 @@
     display: flex;
     justify-content: center;
     z-index: 9999;
+    padding-top: 250px;
+    padding-left: 165px;
 }
 
 
 .header-section{
     color: white;
     font-family: "Montserrat";
+}
+
+
+.welcome-title{
+    font-size: 90px;
 }
 
 @font-face {

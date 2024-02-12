@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <div className="homepage-section">
       <div className="header-section">
-          <h1>Welcome</h1>
+          <p className="welcome-title">Welcome</p>
           <h2>Sample Text</h2>
       </div>
     </div>

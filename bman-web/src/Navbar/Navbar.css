@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px; 
+    background-color: #333; 
+    padding-top: 20px; 
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.nav li {
+    padding: 25px;
+}
+
+.nav li a {
+    display: block;
+    color: white; /* Link color */
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #555; 
+}

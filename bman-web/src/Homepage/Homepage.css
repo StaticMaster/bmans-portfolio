@@ -1,0 +1,16 @@
+.homepage-section{
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+}
+
+
+.header-section{
+    color: white;
+    font-family: "Montserrat";
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
+  }

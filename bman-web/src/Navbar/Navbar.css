@@ -25,10 +25,28 @@
 
 .nav li a {
     display: block;
-    color: white; /* Link color */
+    color: white;
     text-decoration: none;
 }
 
 .nav li a:hover {
     background-color: #555; 
 }
+
+
+.icons-section {
+    display: flex;
+    color: white;
+    gap: 27px;
+    padding-left: 5px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .icon {
+    height: 67px;
+    width: 26px;
+  }

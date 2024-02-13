@@ -1,23 +1,53 @@
-.homepage-section{
-    display: flex;
-    justify-content: center;
-    z-index: 9999;
-    padding-top: 250px;
-    padding-left: 165px;
+.homepage-section {
+  display: block;
+  justify-content: center;
+  z-index: 9999;
+  padding-top: 250px;
+  padding-left: 165px;
 }
 
-
-.header-section{
-    color: white;
-    font-family: "Montserrat";
+.header-section {
+  color: white;
+  font-family: "Montserrat";
+  padding-bottom: 110px;
 }
 
+.welcome-title {
+  font-size: 90px;
+  font-weight: bold;
+}
 
-.welcome-title{
-    font-size: 90px;
+.Typewriter {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  margin-left: 80px;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.card-image {
+  width: 100%;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: local("Montserrat"), url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
-  }
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
+}

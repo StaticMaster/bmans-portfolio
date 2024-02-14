@@ -31,7 +31,7 @@
   max-width: 500px;
   text-align: center;
   position: relative;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .card-title {
@@ -43,14 +43,14 @@
 }
 
 .card-image {
-  width: 410px;
+  width: 255px;
   max-width: 100%;
   transition-duration: 0.5s;
   cursor: pointer;
 }
 
 .card-image:hover {
-  transform: scale(1.1)
+  transform: scale(1.035)
 }
 
 @font-face {

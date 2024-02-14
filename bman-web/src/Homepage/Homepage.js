@@ -29,10 +29,10 @@ function Homepage() {
           {/* <h1 className="card-title">Multimedia Work</h1> */}
           <img src={multimedia} alt="rl-image" className="card-image"></img>
         </div>
-        <div className="card">
-          {/* <h1 className="card-title">Emotes</h1> */}
+        {/* <div className="card">
+          <h1 className="card-title">Emotes</h1>
           <img src={emote} alt="emote-image" className="card-image"></img>
-        </div>
+        </div> */}
         <div className="card">
           {/* <h1 className="card-title">Clients</h1> */}
           <img src={client} alt="rl-image" className="card-image"></img>

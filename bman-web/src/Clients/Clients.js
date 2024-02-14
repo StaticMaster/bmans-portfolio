@@ -3,8 +3,8 @@ import './Clients.css';
 
 function Clients() {
   return (
-    <div>
-      
+    <div className='client-section'>
+      <p>Client things</p>
     </div>
   )
 }

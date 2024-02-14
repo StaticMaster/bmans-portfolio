@@ -35,13 +35,13 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">Multimedia Clips</Link>
+          <Link to="/multimedia">Multimedia Work</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/">Emotes</Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="/">Clients</Link>
+          <Link to="/clients">Clients</Link>
         </li>
         <li>
           <Link to="/">Esports</Link>

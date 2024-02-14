@@ -2,7 +2,7 @@
   display: block;
   justify-content: center;
   z-index: 9999;
-  padding-top: 250px;
+  padding-top: 50px;
   padding-left: 165px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .card {
-  max-width: 300px;
+  max-width: 500px;
   text-align: center;
   position: relative;
   margin-left: 80px;
@@ -43,8 +43,14 @@
 }
 
 .card-image {
-  width: 200px;
+  width: 410px;
   max-width: 100%;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.card-image:hover {
+  transform: scale(1.1)
 }
 
 @font-face {

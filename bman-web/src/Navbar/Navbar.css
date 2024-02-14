@@ -21,16 +21,18 @@
 
 .nav li {
     padding: 25px;
+    font-size: 20px;
 }
 
 .nav li a {
     display: block;
     color: white;
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 .nav li a:hover {
-    background-color: #555; 
+    background-color: #7d008d; 
 }
 
 

@@ -2,8 +2,11 @@
 import React from "react";
 import "./Homepage.css";
 import Typewriter from "typewriter-effect";
-import rocket from "../images/rocket-league-1.jpg";
+import esports from "../images/esports.jpg";
 import emote from '../images/emotes.png';
+import camera from '../images/camera.jpg';
+import client from '../images/clients.jpg';
+import multimedia from '../images/multimedia.png'
 
 function Homepage() {
   return (
@@ -23,20 +26,20 @@ function Homepage() {
       </div>
       <div className="card-section">
         <div className="card">
-          <h1 className="card-title">Multimedia Work</h1>
-          <img src={rocket} alt="rl-image" className="card-image"></img>
+          {/* <h1 className="card-title">Multimedia Work</h1> */}
+          <img src={multimedia} alt="rl-image" className="card-image"></img>
         </div>
         <div className="card">
-          <h1 className="card-title">Emotes</h1>
-          <img src={emote} alt="rl-image" className="card-image"></img>
+          {/* <h1 className="card-title">Emotes</h1> */}
+          <img src={emote} alt="emote-image" className="card-image"></img>
         </div>
         <div className="card">
-          <h1 className="card-title">Clients</h1>
-          <img src={rocket} alt="rl-image" className="card-image"></img>
+          {/* <h1 className="card-title">Clients</h1> */}
+          <img src={client} alt="rl-image" className="card-image"></img>
         </div>
         <div className="card">
-          <h1 className="card-title">Esports</h1>
-          <img src={rocket} alt="rl-image" className="card-image"></img>
+          {/* <h1 className="card-title">Esports</h1> */}
+          <img src={esports} alt="rl-image" className="card-image"></img>
         </div>
       </div>
     </div>

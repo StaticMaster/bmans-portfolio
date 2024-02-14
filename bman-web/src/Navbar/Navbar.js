@@ -38,10 +38,10 @@ function Navbar() {
           <Link to="/">Multimedia Clips</Link>
         </li>
         <li>
-          <Link to="/">Clients</Link>
+          <Link to="/">Emotes</Link>
         </li>
         <li>
-          <Link to="/">Emotes</Link>
+          <Link to="/">Clients</Link>
         </li>
         <li>
           <Link to="/">Esports</Link>

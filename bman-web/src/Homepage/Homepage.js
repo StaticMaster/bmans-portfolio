@@ -3,7 +3,7 @@ import React from "react";
 import "./Homepage.css";
 import Typewriter from "typewriter-effect";
 import rocket from "../images/rocket-league-1.jpg";
-import emote from '../images/bman-emote.jpg';
+import emote from '../images/emotes.png';
 
 function Homepage() {
   return (
@@ -28,7 +28,7 @@ function Homepage() {
         </div>
         <div className="card">
           <h1 className="card-title">Emotes</h1>
-          <img src={rocket} alt="rl-image" className="card-image"></img>
+          <img src={emote} alt="rl-image" className="card-image"></img>
         </div>
         <div className="card">
           <h1 className="card-title">Clients</h1>

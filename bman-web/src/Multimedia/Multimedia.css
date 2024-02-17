@@ -1,0 +1,9 @@
+.editing-section{
+    display: flex;
+    padding-left: 240px;
+}
+
+
+video{
+    width: 200px;
+}

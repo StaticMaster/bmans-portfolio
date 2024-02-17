@@ -1,9 +1,39 @@
-.editing-section{
-    display: flex;
+.multimedia-section{
+    font-family: 'Montserrat';
+}
+
+.multimedia{
+    display: block;
     padding-left: 240px;
 }
 
 
-video{
-    width: 200px;
+.multimedia-title{
+    display: flex;
+    color: white;
 }
+
+video{
+    width: 600px;
+}
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thumbnail-image{
+    width: 450px;
+}
+
+.banner-section{
+    display: block;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
+  }

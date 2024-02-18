@@ -32,6 +32,16 @@ video{
     display: block;
 }
 
+.banner-image{
+    width: 500px;
+}
+
+.emote{
+    width: 200px;
+}
+
+
+
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat"),

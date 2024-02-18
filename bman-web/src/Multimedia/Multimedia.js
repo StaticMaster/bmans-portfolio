@@ -6,7 +6,19 @@ import { Carousel } from "react-responsive-carousel";
 import sonic from '../images/SF.jpg';
 import legend from '../images/legend.jpg';
 import popo from '../images/popo.jpg'
-import dragonball from '../images/DBFZ.jpg' 
+import dragonball from '../images/DBFZ.jpg';
+import banner1 from '../images/banner1.jpg';
+import banner2 from '../images/banner2.jpg';
+import banner3 from '../images/banner3.jpg';
+import banner4 from '../images/banner4.jpg';
+import banner5 from '../images/banner5.jpg';
+import banner6 from '../images/banner6.jpg';
+import bman from '../images/bmanLurk.gif';
+import kirby from '../images/KirbyStop.gif';
+import korok from '../images/Korok.gif';
+import panda from '../images/PandaEmote.gif'
+import kirbyspeed from '../images/Spedup.gif';
+import tibun from '../images/TiBunBun.gif';
 
 function Multimedia() {
   return (
@@ -31,6 +43,23 @@ function Multimedia() {
       <div className="multimedia">
         <h1 className="multimedia-title">Banners</h1>
         <div className="banner-section">
+          <img src={banner1} alt="banner" className="banner-image"></img>
+          <img src={banner2} alt="banner" className="banner-image"></img>
+          <img src={banner3} alt="banner" className="banner-image"></img>
+          <img src={banner4} alt="banner" className="banner-image"></img>
+          <img src={banner5} alt="banner" className="banner-image"></img>
+          <img src={banner6} alt="banner" className="banner-image"></img>
+        </div>
+      </div>
+      <div className="multimedia">
+        <h1 className="multimedia-title">Emotes</h1>
+        <div className="emotes-section">
+          <img src={bman} alt="bman-gif" className="emote"></img>
+          <img src={kirby} alt="bman-gif" className="emote"></img>
+          <img src={korok} alt="bman-gif" className="emote"></img>
+          <img src={panda} alt="bman-gif" className="emote"></img>
+          <img src={kirbyspeed} alt="bman-gif" className="emote"></img>
+          <img src={tibun} alt="bman-gif" className="emote"></img>
         </div>
       </div>
     </div>

@@ -1,0 +1,58 @@
+.client-section{
+
+}
+
+.client-title{
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat';
+}
+
+
+.testimonial{
+    display: block;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.testimonial-image{
+    width: 300px;
+}
+
+.client-icon{
+    width: 40px;
+    height: 100px; 
+    margin-right: 25px;
+}
+
+.creator-name{
+    font-size: 35px;
+}
+
+.testimonial-sentence{
+    font-weight: bold;
+}
+
+.video-section{
+    display: flex;
+    justify-content: center;
+}
+
+.shortform-content{
+    padding-left: 10px;
+}
+
+.creator-vid{
+    width: 1000px;
+}
+
+
+.shortform-video{
+    width: 400px;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
+  }

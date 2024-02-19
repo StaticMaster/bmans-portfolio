@@ -13,8 +13,8 @@
     color: white;
 }
 
-video{
-    width: 600px;
+.sample-video{
+    width: 650px;
 }
 
 .image-section{
@@ -33,11 +33,11 @@ video{
 }
 
 .banner-image{
-    width: 500px;
+    width: 580px;
 }
 
 .emote{
-    width: 200px;
+    width: 330px;
 }
 
 

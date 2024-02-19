@@ -1,6 +1,9 @@
 import React from "react";
 import "./Multimedia.css";
 import rlvid from "../videos/rl-montage.mp4";
+import text from '../videos/Texttest.mp4';
+import starting from '../videos/starting-soon.mp4';
+import dbfz from '../videos/modded-dbfz.mp4';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import sonic from '../images/SF.jpg';
@@ -25,9 +28,18 @@ function Multimedia() {
     <div className="multimedia-section">
       <div className="multimedia">
         <h1 className="multimedia-title">Editing</h1>
-        <Carousel showArrows-={true} autoPlay={true} infiniteLoop={true}>
+        <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
           <video autoPlay loop muted>
-            <source src={rlvid} type="video/mp4" className="video"></source>
+            <source src={rlvid} type="video/mp4"></source>
+          </video>
+          <video autoPlay loop muted>
+            <source src={text} type="video/mp4"></source>
+          </video>
+          <video autoPlay loop muted>
+            <source src={starting} type="video/mp4" ></source>
+          </video>
+          <video autoPlay loop muted>
+            <source src={dbfz} type="video/mp4"></source>
           </video>
         </Carousel>
       </div>

@@ -37,14 +37,11 @@ function Navbar() {
         <li>
           <Link to="/multimedia">Multimedia Work</Link>
         </li>
-        {/* <li>
-          <Link to="/">Emotes</Link>
-        </li> */}
         <li>
           <Link to="/clients">Clients</Link>
         </li>
         <li>
-          <Link to="/">Esports</Link>
+          <Link to="/esports">Esports</Link>
         </li>
       </ul>
     </div>

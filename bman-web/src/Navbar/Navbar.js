@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import bmanlogo from "../images/bman.png";
@@ -8,40 +8,54 @@ import { FaTwitch } from "react-icons/fa";
 import { GrYoutube } from "react-icons/gr";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="navbar">
+    <div className={`navbar ${isOpen ? 'active' : ''}`}>
       <div className="logo-social-section">
         <img src={bmanlogo} alt="bman-logo" className="logo"></img>
         <div className="icons-section">
           <a href="https://twitter.com/Bman_ike" className="link">
             <FaXTwitter className="icon" />
           </a>
-          <a
-            href="https://www.instagram.com/bman_ike/"
-            className="link"
-          >
+          <a href="https://www.instagram.com/bman_ike/" className="link">
             <FaInstagram className="icon" />
           </a>
           <a href="https://www.twitch.tv/bman_ike" className="link">
             <FaTwitch className="icon" />
           </a>
-          <a href="https://www.youtube.com/channel/UCFPUIrBzUWq5CLVmZmc2CHQ?view_as=subscriber" className="link">
+          <a
+            href="https://www.youtube.com/channel/UCFPUIrBzUWq5CLVmZmc2CHQ?view_as=subscriber"
+            className="link"
+          >
             <GrYoutube className="icon" />
           </a>
         </div>
       </div>
-      <ul className="nav">
+      <div className="hamburger-icon" onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+      </div>
+      <ul className={`nav ${isOpen ? 'active' : ''}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={toggleMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/multimedia">Multimedia Work</Link>
+          <Link to="/multimedia" onClick={toggleMenu}>Multimedia Work</Link>
         </li>
         <li>
-          <Link to="/clients">Clients</Link>
+          <Link to="/clients" onClick={toggleMenu}>Clients</Link>
         </li>
         <li>
-          <Link to="/esports">Esports</Link>
+          <Link to="/esports" onClick={toggleMenu}>Esports</Link>
+        </li>
+        <li>
+          <Link to="/contact" onClick={toggleMenu}>Contact</Link>
         </li>
       </ul>
     </div>

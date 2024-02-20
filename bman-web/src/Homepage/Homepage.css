@@ -50,7 +50,45 @@
 }
 
 .card-image:hover {
-  transform: scale(1.035)
+  transform: scale(1.035);
+}
+
+@media (max-width: 768px) {
+  .homepage-section {
+    padding-left: 0px; 
+  }
+
+  .welcome-title {
+    font-size: 60px; /* Adjust font size for smaller screens */
+  }
+
+  .Typewriter {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .card-section {
+    display: block;
+  }
+
+  .card {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    margin: 0 auto 20px; /* Adjust margin for smaller screens */
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    transition-duration: 0s;
+  }
+
+  .card-title {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .card-image {
+    width: 320px; /* Adjust width for smaller screens */
+    max-width: 100%;
+  }
+
+  .card-image:hover{
+    transform: none;
+  }
 }
 
 @font-face {

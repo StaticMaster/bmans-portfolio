@@ -5,6 +5,7 @@ import Homepage from './Homepage/Homepage';
 import Clients from './Clients/Clients';
 import Multimedia from './Multimedia/Multimedia';
 import Esports from './Esports/Esports';
+import Contact from './Contact/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/clients' element={<Clients/>}/>
         <Route path='/multimedia' element={<Multimedia/>}/>
         <Route path='/esports' element={<Esports/>}/>
+        <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -162,9 +162,7 @@ function Clients() {
           </div>
           <h3 className="creator-name">QueenDee</h3>
           <p className="queen-testimonial-sentence">
-            "Bman's editing is a 10/10. Not only is the turn around quick but he
-            also makes sure to check in to make sure it’s progressing the way
-            the client wants. Super friendly and always willing to make
+            "Bman's editing is a 10/10. Super friendly and always willing to make
             necessary changes based on the client. I’ve loved working with Bman
             and how the videos he edited for me turned out!"
           </p>

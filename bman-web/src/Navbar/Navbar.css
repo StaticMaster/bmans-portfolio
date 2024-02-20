@@ -6,6 +6,7 @@
     width: 200px; 
     background-color: #333; 
     padding-top: 20px; 
+    transition-duration: 0.5s
 }
 
 .logo{
@@ -51,4 +52,88 @@
   .icon {
     height: 67px;
     width: 26px;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+  
+  /* Homemade hamburger menu styles */
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first and third bar to create X symbol when active */
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .navbar {
+      width: 80px;
+      padding-top: 10px;
+      background-color: transparent;
+    }
+  
+    .nav {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      transition: max-height 0.5s ease-out;
+      max-height: 0;
+      overflow: hidden;
+    }
+  
+    .navbar.active .nav {
+      max-height: 500px;
+      width: 400px;
+    }
+  
+    .nav.active {
+      display: block;
+    }
+  
+    .nav li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* .icons-section{
+        display: block;
+        padding-top: 620px;
+    } */
+
+    .icon{
+        display: none;
+        /* width: 40px; */
+    }
+
+    .logo{
+    display: none;
+    }
   }

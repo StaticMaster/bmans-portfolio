@@ -3,8 +3,9 @@ import React from "react";
 import "./Homepage.css";
 import Typewriter from "typewriter-effect";
 import esports from "../images/esports.jpg";
-import client from '../images/clients.jpg';
-import multimedia from '../images/multimedia.png'
+import client from "../images/clients.jpg";
+import multimedia from "../images/multimedia.png";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -24,13 +25,19 @@ function Homepage() {
       </div>
       <div className="card-section">
         <div className="card">
-          <img src={multimedia} alt="rl-image" className="card-image"></img>
+          <Link to="/multimedia">
+            <img src={multimedia} alt="rl-image" className="card-image"></img>
+          </Link>
         </div>
         <div className="card">
-          <img src={client} alt="rl-image" className="card-image"></img>
+          <Link to="/clients">
+            <img src={client} alt="rl-image" className="card-image"></img>
+          </Link>
         </div>
         <div className="card">
-          <img src={esports} alt="rl-image" className="card-image"></img>
+          <Link to="/esports">
+            <img src={esports} alt="rl-image" className="card-image"></img>
+          </Link>
         </div>
       </div>
     </div>

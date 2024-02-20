@@ -68,6 +68,45 @@
     width: 400px;
 }
 
+@media (max-width: 768px) {
+    .video-section{
+        display: block;
+    }
+    .testimonial-image,
+    .zuno-testimonial-image {
+        width: 100%; /* Make images full width on smaller screens */
+    }
+
+    .creator-vid {
+        max-width: 100%; /* Make videos fit the width of the container on smaller screens */
+        height: auto; /* Ensure aspect ratio is maintained */
+    }
+
+    .shortform-video {
+        width: 100%; /* Make shortform videos full width on smaller screens */
+    }
+
+    .client-icon {
+        margin-right: 15px; /* Adjust margin for smaller screens */
+        margin-left: 10px; /* Adjust margin for smaller screens */
+        width: 30px; /* Adjust width for smaller screens */
+        height: 80px; /* Adjust height for smaller screens */
+    }
+
+    .client-title {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .creator-name {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .testimonial-sentence,
+    .queen-testimonial-sentence {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
 @font-face {
     font-family: "Montserrat";
     src: local("Montserrat"),

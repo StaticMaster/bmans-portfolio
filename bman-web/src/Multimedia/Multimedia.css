@@ -53,6 +53,31 @@
   width: 330px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+  .multimedia-section{
+    padding-top: 80px;
+  }
+
+  .multimedia {
+    display: block;
+    padding-left: 0px; /* Adjust padding for smaller screens */
+  }
+
+  .sample-video,
+  .editing-video,
+  .thumbnail-image,
+  .banner-image,
+  .emote {
+    width: 100%; /* Make elements full width on smaller screens */
+  }
+
+  .multimedia-title{
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),

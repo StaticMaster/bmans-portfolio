@@ -19,10 +19,16 @@
     width: 300px;
 }
 
+.zuno-testimonial-image{
+    width: 500px;
+    padding-top: 20px;
+}
+
 .client-icon{
     width: 40px;
     height: 100px; 
     margin-right: 25px;
+    margin-left: 20px;
 }
 
 .creator-name{
@@ -31,8 +37,16 @@
 
 .testimonial-sentence{
     font-weight: bold;
+    text-align: center;
 }
 
+.queen-testimonial-sentence{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+
+}
 .video-section{
     display: flex;
     justify-content: center;
@@ -44,6 +58,7 @@
 
 .creator-vid{
     width: 1000px;
+    height: 560px;
 }
 
 

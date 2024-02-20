@@ -29,16 +29,16 @@ function Multimedia() {
       <div className="multimedia">
         <h1 className="multimedia-title">Editing</h1>
         <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted className="editing-video">
             <source src={rlvid} type="video/mp4"></source>
           </video>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted className="editing-video">
             <source src={text} type="video/mp4"></source>
           </video>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted className="editing-video">
             <source src={starting} type="video/mp4" ></source>
           </video>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted className="editing-video">
             <source src={dbfz} type="video/mp4"></source>
           </video>
         </Carousel>

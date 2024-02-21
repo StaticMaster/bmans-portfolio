@@ -92,40 +92,47 @@
   /* Media query for mobile devices */
   @media (max-width: 768px) {
     .navbar {
-      width: 80px;
-      padding-top: 10px;
-      background-color: transparent;
+        width: 80px;
+        padding-top: 10px;
+        background-color: transparent;
+        position: relative; /* Add position relative to control z-index */
     }
 
-    .hamburger-icon{
-      display: block;
-      padding-left: 25px;
+    .hamburger-icon {
+        display: block;
+        padding-left: 15px;
+        position: relative; /* Add position relative to control z-index */
+        z-index: 100; /* Ensure hamburger icon appears in front */
     }
-  
+
     .nav {
-      display: block;
-      position: absolute;
-      width: 400px;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      transition: max-height 0.5s ease-out;
-      max-height: 0;
-      overflow: hidden;
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        transition: max-height 0.5s ease-out;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 99; /* Ensure dropdown appears in front */
     }
-  
+
     .navbar.active .nav {
-      max-height: 500px;
-      width: 400px;
+        max-height: 500px;
+        width: 430px;
+        left: 0;
+        right: 0;
+        margin: 0;
     }
-  
+
     .nav.active {
-      display: block;
+        display: block;
     }
-  
+
     .nav li {
-      padding: 10px;
-      text-align: center;
+        padding: 10px;
+        text-align: center;
     }
 
     /* .icons-section{
@@ -133,17 +140,17 @@
         padding-top: 620px;
     } */
 
-    .icon{
+    .icon {
         display: none;
         /* width: 40px; */
     }
 
-    .logo{
-    display: none;
+    .logo {
+        display: none;
     }
 
-    .heading-section{
-      display: block;
-      padding-right: 10px;
+    .heading-section {
+        display: block;
+        padding-right: 10px;
     }
-  }
+}

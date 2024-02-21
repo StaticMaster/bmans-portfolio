@@ -107,6 +107,14 @@
     .queen-testimonial-sentence {
         font-size: 20px; /* Adjust font size for smaller screens */
     }
+
+    .shortform-content{
+        padding-left: 0;
+    }
+
+    .client-section{
+        padding-top: 125px;
+    }
 }
 
 @font-face {

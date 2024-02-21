@@ -52,20 +52,22 @@
 .video-section{
     display: flex;
     justify-content: center;
+    padding-left: 60px;
 }
 
 .shortform-content{
+    display: flex;
+    justify-content: center;
     padding-left: 10px;
 }
 
 .creator-vid{
-    width: 1000px;
-    height: 560px;
+    width: 630px;
 }
 
 
 .shortform-video{
-    width: 400px;
+    width: 200px;
 }
 
 @media (max-width: 768px) {

@@ -36,9 +36,11 @@
 }
 
 .testimonial-sentence{
+    display: flex;
+    justify-content: center;
     font-weight: bold;
     text-align: center;
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .queen-testimonial-sentence{
@@ -67,12 +69,13 @@
 
 
 .shortform-video{
-    width: 200px;
+    width: 300px;
 }
 
 @media (max-width: 768px) {
     .video-section{
         display: block;
+        padding-left: 0;
     }
     .testimonial-image,
     .zuno-testimonial-image {
@@ -109,6 +112,7 @@
     }
 
     .shortform-content{
+        display: block;
         padding-left: 0;
     }
 

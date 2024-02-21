@@ -9,14 +9,17 @@ import xaphora3 from "../videos/xaphora3.mp4";
 import zuno1 from "../videos/zuno1.mp4";
 import zuno2 from "../videos/zuno2.mp4";
 import zuno3 from "../videos/zuno3.mp4";
-import brooke1 from '../videos/brooke1.mp4';
-import brooke2 from '../videos/brooke2.mp4';
-import brooke3 from '../videos/brooke3.mp4';
+import brooke1 from "../videos/brooke1.mp4";
+import brooke2 from "../videos/brooke2.mp4";
+import brooke3 from "../videos/brooke3.mp4";
+import queen1 from '../videos/queendee1.mp4';
+import queen2 from '../videos/queendee2.mp4';
+import queen3 from '../videos/queendee3.mp4';
 import tiunboxing from "../videos/cod-unboxing.mp4";
 import xaphoralogo from "../images/xaphora-logo.png";
 import zunologo from "../images/zuno-logo.jpg";
 import dequeenlogo from "../images/deequeenlogo.png";
-import brookelogo from '../images/brooke-logo.png'
+import brookelogo from "../images/brooke-logo.png";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
@@ -50,7 +53,7 @@ function Clients() {
           </div>
           <h3 className="creator-name">Legend Of Ti</h3>
           <p className="testimonial-sentence">
-           "I think that Bman's editing is great!" 
+            "I think that Bman's editing is great!"
           </p>
           <div className="video-section">
             <video autoPlay loop muted className="creator-vid">
@@ -162,26 +165,28 @@ function Clients() {
           </div>
           <h3 className="creator-name">QueenDee</h3>
           <p className="queen-testimonial-sentence">
-            "Bman's editing is a 10/10. Super friendly and always willing to make
-            necessary changes based on the client. I’ve loved working with Bman
-            and how the videos he edited for me turned out!"
+            "Bman's editing is a 10/10. Super friendly and always willing to
+            make necessary changes based on the client. I’ve loved working with
+            Bman and how the videos he edited for me turned out!"
           </p>
-          <div className="video-section">
-            <video autoPlay loop muted className="creator-vid">
-              <source src={tividsample} type="video/mp4"></source>
+          <div className="shortform-content">
+            <video autoPlay loop muted className="shortform-video">
+              <source src={queen1} type="video/mp4"></source>
             </video>
-            <div className="shortform-content">
-              <video autoPlay loop muted className="shortform-video">
-                <source src={ticlaymore} type="video/mp4"></source>
-              </video>
-              <video autoPlay loop muted className="shortform-video">
-                <source src={tiunboxing} type="video/mp4"></source>
-              </video>
-            </div>
+            <video autoPlay loop muted className="shortform-video">
+              <source src={queen2} type="video/mp4"></source>
+            </video>
+            <video autoPlay loop muted className="shortform-video">
+              <source src={queen3} type="video/mp4"></source>
+            </video>
           </div>
         </div>
         <div className="testimonial">
-          <img src={brookelogo} alt="ti-logo" className="testimonial-image"></img>
+          <img
+            src={brookelogo}
+            alt="ti-logo"
+            className="testimonial-image"
+          ></img>
           <div className="creator-social-section">
             <a href="https://twitter.com/brookehboo?lang=en" className="link">
               <FaXTwitter className="client-icon" />
@@ -196,7 +201,10 @@ function Clients() {
               <FaInstagram className="client-icon" />
             </a>
 
-            <a href="https://www.youtube.com/@BrookehbooGaming" className="link">
+            <a
+              href="https://www.youtube.com/@BrookehbooGaming"
+              className="link"
+            >
               <GrYoutube className="client-icon" />
             </a>
           </div>
@@ -206,17 +214,17 @@ function Clients() {
             for and sends drafts along the way to ensure my vision is coming to
             life."
           </p>
-            <div className="shortform-content">
-              <video autoPlay loop muted className="shortform-video">
-                <source src={brooke1} type="video/mp4"></source>
-              </video>
-              <video autoPlay loop muted className="shortform-video">
-                <source src={brooke2} type="video/mp4"></source>
-              </video>
-              <video autoPlay loop muted className="shortform-video">
-                <source src={brooke3} type="video/mp4"></source>
-              </video>
-            </div>
+          <div className="shortform-content">
+            <video autoPlay loop muted className="shortform-video">
+              <source src={brooke1} type="video/mp4"></source>
+            </video>
+            <video autoPlay loop muted className="shortform-video">
+              <source src={brooke2} type="video/mp4"></source>
+            </video>
+            <video autoPlay loop muted className="shortform-video">
+              <source src={brooke3} type="video/mp4"></source>
+            </video>
+          </div>
         </div>
       </div>
     </div>

@@ -120,7 +120,7 @@
 
     .navbar.active .nav {
         max-height: 500px;
-        /* width: 400px; */
+        width: 430px;
         left: 0;
         right: 0;
         margin: 0;

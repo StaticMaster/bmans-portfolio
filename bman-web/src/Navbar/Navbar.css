@@ -116,6 +116,7 @@
         max-height: 0;
         overflow: hidden;
         z-index: 99; /* Ensure dropdown appears in front */
+        margin:0
     }
 
     .navbar.active .nav {

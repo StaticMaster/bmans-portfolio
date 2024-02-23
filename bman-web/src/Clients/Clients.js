@@ -56,14 +56,14 @@ function Clients() {
             "I think that Bman's editing is great!"
           </p>
           <div className="video-section">
-            <video autoPlay loop muted className="creator-vid">
+            <video autoPlay loop muted playsInline controls={false} className="creator-vid">
               <source src={tividsample} type="video/mp4"></source>
             </video>
             <div className="shortform-content">
-              <video autoPlay loop muted className="shortform-video">
+              <video autoPlay loop muted playsInline controls={false} className="shortform-video">
                 <source src={ticlaymore} type="video/mp4"></source>
               </video>
-              <video autoPlay loop muted className="shortform-video">
+              <video autoPlay loop muted playsInline controls={false} className="shortform-video">
                 <source src={tiunboxing} type="video/mp4"></source>
               </video>
             </div>
@@ -100,14 +100,14 @@ function Clients() {
             to changing things with ease which helps a lot too!"
           </p>
           <div className="video-section">
-            <video autoPlay loop muted className="creator-vid">
+            <video autoPlay loop muted playsInline controls={false} className="creator-vid">
               <source src={xaphora3} type="video/mp4"></source>
             </video>
             <div className="shortform-content">
-              <video autoPlay loop muted className="shortform-video">
+              <video autoPlay loop muted playsInline controls={false} className="shortform-video">
                 <source src={xaphora1} type="video/mp4"></source>
               </video>
-              <video autoPlay loop muted className="shortform-video">
+              <video autoPlay loop muted playsInline controls={false} className="shortform-video">
                 <source src={xaphora2} type="video/mp4"></source>
               </video>
             </div>
@@ -125,13 +125,13 @@ function Clients() {
             improved a ton!"
           </p>
           <div className="shortform-content">
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={zuno1} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={zuno2} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={zuno3} type="video/mp4"></source>
             </video>
           </div>
@@ -170,13 +170,13 @@ function Clients() {
             Bman and how the videos he edited for me turned out!"
           </p>
           <div className="shortform-content">
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={queen1} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={queen2} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={queen3} type="video/mp4"></source>
             </video>
           </div>
@@ -215,13 +215,13 @@ function Clients() {
             life."
           </p>
           <div className="shortform-content">
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={brooke1} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={brooke2} type="video/mp4"></source>
             </video>
-            <video autoPlay loop muted className="shortform-video">
+            <video autoPlay loop muted playsInline controls={false} className="shortform-video">
               <source src={brooke3} type="video/mp4"></source>
             </video>
           </div>

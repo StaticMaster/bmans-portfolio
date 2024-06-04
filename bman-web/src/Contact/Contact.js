@@ -10,8 +10,8 @@ function Contact() {
       e.preventDefault();
   
       emailjs
-        .sendForm('service_3i7kgtb', 'template_v2xg8j7', form.current, {
-          publicKey: 'WaT8kSB0ZDcsi8-vU',
+        .sendForm('service_3i7kgtb', 'template_op941z6', form.current, {
+          publicKey: 'QYWRPONDq6Cel9BvF',
         })
         .then(
           () => {
@@ -20,6 +20,7 @@ function Contact() {
           (error) => {
             console.log('FAILED...', error.text);
           },
+          form.current.reset()
         );
     };
   return (

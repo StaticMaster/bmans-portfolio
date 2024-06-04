@@ -15,48 +15,55 @@ function Navbar() {
   };
 
   return (
-    <div className={`navbar ${isOpen ? 'active' : ''}`}>
+    <div className={`navbar ${isOpen ? "active" : ""}`}>
       <div className="logo-social-section">
-        <img src={bmanlogo} alt="bman-logo" className="logo"></img>
-        <div className="icons-section">
+        <Link to="/">
+          <img src={bmanlogo} alt="bman-logo" className="logo"></img>
+        </Link>
+      </div>
+      <div className="hamburger-icon" onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+      </div>
+      <ul className={`nav ${isOpen ? "active" : ""}`}>
+        <li className="nav-link">
+          <Link to="/multimedia" onClick={toggleMenu}>
+            Multimedia Work
+          </Link>
+        </li>
+        <li className="nav-link">
+          <Link to="/clients" onClick={toggleMenu}>
+            Clients
+          </Link>
+        </li>
+        <li className="nav-link">
+          <Link to="/about" onClick={toggleMenu}>
+            About Me
+          </Link>
+        </li>
+        <li className="nav-link">
+          <Link to="/contact" onClick={toggleMenu}>
+            Contact
+          </Link>
+        </li>
+        <div className="navbar-icons-section">
           <a href="https://twitter.com/Bman_ike" className="link">
-            <FaXTwitter className="icon" />
+            <FaXTwitter className="navbar-icon" />
           </a>
           <a href="https://www.instagram.com/bman_ike/" className="link">
-            <FaInstagram className="icon" />
+            <FaInstagram className="navbar-icon" />
           </a>
           <a href="https://www.twitch.tv/bman_ike" className="link">
-            <FaTwitch className="icon" />
+            <FaTwitch className="navbar-icon" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCFPUIrBzUWq5CLVmZmc2CHQ?view_as=subscriber"
             className="link"
           >
-            <GrYoutube className="icon" />
+            <GrYoutube className="navbar-icon" />
           </a>
         </div>
-      </div>
-      <div className="hamburger-icon" onClick={toggleMenu}>
-        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
-      </div>
-      <ul className={`nav ${isOpen ? 'active' : ''}`}>
-        <li>
-          <Link to="/" onClick={toggleMenu}>Home</Link>
-        </li>
-        <li>
-          <Link to="/multimedia" onClick={toggleMenu}>Multimedia Work</Link>
-        </li>
-        <li>
-          <Link to="/clients" onClick={toggleMenu}>Clients</Link>
-        </li>
-        <li>
-          <Link to="/esports" onClick={toggleMenu}>Esports</Link>
-        </li>
-        <li>
-          <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-        </li>
       </ul>
     </div>
   );

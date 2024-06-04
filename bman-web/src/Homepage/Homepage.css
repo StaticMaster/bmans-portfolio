@@ -55,11 +55,17 @@
 
 @media (max-width: 768px) {
   .homepage-section {
-    padding-left: 0px; 
+    padding: 0px; 
+    height: 150vh;
+  }
+
+  .header-section{
+    padding-bottom: 20px;
   }
 
   .welcome-title {
     font-size: 60px; /* Adjust font size for smaller screens */
+    margin: 30px;
   }
 
   .Typewriter {

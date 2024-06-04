@@ -1,11 +1,12 @@
 .client-section{
-
+    height: 560vh;
 }
 
 .client-title{
     color: white;
     font-size: 50px;
     font-family: 'Montserrat';
+    margin: 0;
 }
 
 
@@ -33,6 +34,13 @@
 
 .creator-name{
     font-size: 35px;
+}
+
+.ti-testimonial-sentence{
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .testimonial-sentence{
@@ -73,6 +81,7 @@
 }
 
 @media (max-width: 768px) {
+
     .video-section{
         display: block;
         padding-left: 0;
@@ -117,7 +126,8 @@
     }
 
     .client-section{
-        padding-top: 125px;
+        height: 560vh;
+        padding-top: 95px;
     }
 }
 

@@ -4,8 +4,9 @@ import Navbar from "./Navbar/Navbar";
 import Homepage from "./Homepage/Homepage";
 import Clients from "./Clients/Clients";
 import Multimedia from "./Multimedia/Multimedia";
-import Esports from "./Esports/Esports";
+import About from "./About/About";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/multimedia" element={<Multimedia />} />
-          <Route path="/esports" element={<Esports />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

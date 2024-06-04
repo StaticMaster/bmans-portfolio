@@ -23,7 +23,7 @@
 }
 
 .send-button button {
-  background-color: #04aa6d;
+  background-color: #4b0092;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -32,7 +32,7 @@
 }
 
 .send-button button:hover {
-  background-color: #45a049;
+  background-color: #4b0092;
 }
 
 @media (max-width: 768px) {

@@ -1,158 +1,151 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 200px; 
-    background-color: #333; 
-    padding-top: 20px; 
-    transition-duration: 0.5s
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  background-color: #333;
 }
 
-.logo{
-    width: 200px;
+.navbar .logo-social-section {
+  display: flex;
+  align-items: center;
 }
 
-
-.nav {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px;
+.navbar .logo {
+  margin-right: 20px;
 }
 
-.nav li {
-    padding: 20px;
-    font-size: 20px;
+.navbar .nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    transition-duration: 0.5s;
+.navbar .nav li {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.navbar .nav li:first-child {
+  margin-left: 0;
+}
+
+.navbar .nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition-duration: 0.5s;
 }
 
 .nav li a:hover {
-    background-color: #7d008d; 
+  background-color: #7d008d;
 }
 
+.logo {
+  width: 80px;
+}
 
-.icons-section {
-    display: flex;
-    color: white;
-    gap: 27px;
-    padding-left: 5px;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .icon {
-    height: 67px;
-    width: 26px;
+.hamburger-icon {
+  display: none;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 12px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first and third bar to create X symbol when active */
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 10px;
+    background-color: transparent;
+    position: relative; /* Add position relative to control z-index */
   }
 
   .hamburger-icon {
-    display: none;
-  }
-  
-  /* Homemade hamburger menu styles */
-  /* .hamburger-icon {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 9999;
-  } */
-  
-  .bar {
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    margin: 12px 0;
-    transition: 0.4s;
+    padding-left: 2px;
+    position: relative; /* Add position relative to control z-index */
+    z-index: 100; /* Ensure hamburger icon appears in front */
   }
-  
-  /* Rotate first and third bar to create X symbol when active */
-  .bar.open:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+
+  .nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0%;
+    background-color: #333;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 99;
+    margin: 0;
+    right: 0;
   }
-  
-  .bar.open:nth-child(2) {
-    opacity: 0;
+
+  .nav-link {
+    padding: 10px;
   }
-  
-  .bar.open:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+  .navbar.active .nav {
+    display: block;
+    max-height: 500px;
+    width: 430px;
+    left: 0;
+    right: 0;
+    margin: 0;
   }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .navbar {
-        width: 80px;
-        padding-top: 10px;
-        background-color: transparent;
-        position: relative; /* Add position relative to control z-index */
-    }
 
-    .hamburger-icon {
-        display: block;
-        padding-left: 15px;
-        position: relative; /* Add position relative to control z-index */
-        z-index: 100; /* Ensure hamburger icon appears in front */
-    }
+  .nav.active {
+    display: block;
+  }
 
-    .nav {
-        display: block;
-        position: fixed;
-        width: 100%;
-        top: 60px;
-        left: 0%;
-        background-color: #333;
-        transition: max-height 0.5s ease-out;
-        max-height: 0;
-        overflow: hidden;
-        z-index: 99; /* Ensure dropdown appears in front */
-        margin:0;
-        right: 0;
-    }
+  .nav li a {
+    padding: 1px;
+    text-align: center;
+    transition-duration: none;
+  }
 
-    .navbar.active .nav {
-        max-height: 500px;
-        width: 430px;
-        left: 0;
-        right: 0;
-        margin: 0;
-    }
+  .nav li a:hover {
+    background-color: none;
+  }
 
-    .nav.active {
-        display: block;
-    }
+  .icon {
+    display: none;
+    width: 40px;
+  }
 
-    .nav li {
-        padding: 10px;
-        text-align: center;
-    }
+  .heading-section {
+    display: block;
+    padding-right: 10px;
+  }
 
-    /* .icons-section{
-        display: block;
-        padding-top: 620px;
-    } */
+  .navbar-icons-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
 
-    .icon {
-        display: none;
-        /* width: 40px; */
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .heading-section {
-        display: block;
-        padding-right: 10px;
-    }
+  .navbar-icon {
+    width: 80px;
+    height: 35px;
+  }
 }

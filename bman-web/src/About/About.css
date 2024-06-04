@@ -1,0 +1,41 @@
+.aboutme{
+    /* height: 100vh; */
+    background-color: #4b0092;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.about-sentence{
+    font-size: 28px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+.aboutme{
+    padding-top: 100px;
+    position:static;
+    top:0;
+    left: 0;
+    transform: none;
+}
+    .about-sentence{
+       display: flex;
+       font-size: 18px;
+       position: static;
+    }
+
+
+}
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      url(/src/fonts/Montserrat-VariableFont_wght.woff) format("woff");
+  }

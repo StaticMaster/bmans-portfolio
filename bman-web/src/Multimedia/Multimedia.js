@@ -28,7 +28,7 @@ function Multimedia() {
     <div className="multimedia-section">
       <div className="multimedia">
         <h1 className="multimedia-title">Editing</h1>
-        <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
+        <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showStatus={false} >
           <video autoPlay loop muted playsInline controls={false} className="editing-video">
             <source src={rlvid} type="video/mp4"></source>
           </video>

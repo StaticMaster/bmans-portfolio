@@ -1,15 +1,18 @@
 .multimedia-section {
+  background-color:#4b0092 ;
   font-family: "Montserrat";
+  height: 162vh;
 }
 
 .multimedia {
   display: block;
-  padding-left: 240px;
+  /* padding-left: 240px; */
 }
 
 .multimedia-title {
   display: flex;
   color: white;
+  padding-left: 10px;
 }
 
 .sample-video {
@@ -50,14 +53,15 @@
 }
 
 .emote {
-  width: 330px;
+  width: 300px;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
 
   .multimedia-section{
-    padding-top: 80px;
+    padding-top: 20px;
+    height: 560vh;
   }
 
   .multimedia {

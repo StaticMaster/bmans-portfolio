@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <div className={`navbar ${isOpen ? "active" : ""}`}>
+    <div className="navbar">
       <div className="logo-social-section">
         <Link to="/">
           <img src={bmanlogo} alt="bman-logo" className="logo"></img>
@@ -27,6 +27,7 @@ function Navbar() {
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
       </div>
       <ul className={`nav ${isOpen ? "active" : ""}`}>
+        <span className="close-btn" onClick={toggleMenu}>&times;</span>
         <li className="nav-link">
           <Link to="/multimedia" onClick={toggleMenu}>
             Multimedia Work

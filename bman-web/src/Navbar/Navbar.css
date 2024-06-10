@@ -57,6 +57,10 @@
   transition: 0.4s;
 }
 
+
+.navbar-icons-section{
+  display: none;
+}
 /* Rotate first and third bar to create X symbol when active */
 .bar.open:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -75,65 +79,43 @@
   .navbar {
     padding-top: 10px;
     background-color: transparent;
-    position: relative; /* Add position relative to control z-index */
   }
 
   .hamburger-icon {
     display: block;
-    padding-left: 2px;
-    position: relative; /* Add position relative to control z-index */
-    z-index: 100; /* Ensure hamburger icon appears in front */
   }
 
   .nav {
     display: block;
     position: fixed;
-    width: 100%;
-    top: 60px;
-    left: 0%;
-    background-color: #333;
-    transition: max-height 0.5s ease-out;
-    max-height: 0;
-    overflow: hidden;
-    z-index: 99;
-    margin: 0;
-    right: 0;
-  }
-
-  .nav-link {
-    padding: 10px;
-  }
-  .navbar.active .nav {
-    display: block;
-    max-height: 500px;
     width: 430px;
-    left: 0;
-    right: 0;
-    margin: 0;
+    top: 0;
+    right: -530px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 999;
+    padding: 20px;
   }
 
   .nav.active {
     display: block;
+    right: 0px;
+    left: 100px;
+    padding-top: 110px;
+    padding-right: 100px;
   }
 
-  .nav li a {
-    padding: 1px;
-    text-align: center;
-    transition-duration: none;
+  .navbar .nav li{
+    margin-left: 0;
+    margin-top: 10px;
   }
 
-  .nav li a:hover {
-    background-color: none;
-  }
-
-  .icon {
-    display: none;
-    width: 40px;
-  }
-
-  .heading-section {
-    display: block;
-    padding-right: 10px;
+  .navbar .nav li a {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-right: 100px;
   }
 
   .navbar-icons-section {
@@ -141,11 +123,21 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 20px;
-    margin-left: 20px;
+    margin-right: 100px;
   }
 
   .navbar-icon {
-    width: 80px;
-    height: 35px;
+    width: 60px;
+    height: 45px;
+  }
+
+  .close-btn {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
 }

@@ -57,6 +57,10 @@
   transition: 0.4s;
 }
 
+.close-btn{
+  display: none;
+}
+
 
 .navbar-icons-section{
   display: none;
